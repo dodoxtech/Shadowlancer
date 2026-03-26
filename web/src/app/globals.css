@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ── Sanctuary Design Tokens ─────────────────────────────── */
+@theme {
+  /* Colors */
+  --color-primary: #5f5e5e;
+  --color-primary-dim: #535252;
+  --color-primary-fixed: #e5e2e1;
+  --color-primary-fixed-dim: #d6d4d3;
+  --color-primary-container: #e5e2e1;
+  --color-on-primary: #faf7f6;
+  --color-on-primary-fixed: #403f3f;
+  --color-on-primary-fixed-variant: #5c5b5b;
+  --color-on-primary-container: #525151;
+  --color-inverse-primary: #ffffff;
+  --color-surface-tint: #5f5e5e;
+
+  --color-secondary: #585f6d;
+  --color-secondary-dim: #4c5361;
+  --color-secondary-fixed: #dce2f3;
+  --color-secondary-fixed-dim: #ced4e4;
+  --color-secondary-container: #dce2f3;
+  --color-on-secondary: #f8f8ff;
+  --color-on-secondary-fixed: #39404c;
+  --color-on-secondary-fixed-variant: #555c69;
+  --color-on-secondary-container: #4b525f;
+
+  --color-tertiary: #4c5b9c;
+  --color-tertiary-dim: #404f8f;
+  --color-tertiary-fixed: #a3b2fa;
+  --color-tertiary-fixed-dim: #96a5ec;
+  --color-tertiary-container: #a3b2fa;
+  --color-on-tertiary: #faf8ff;
+  --color-on-tertiary-fixed: #021657;
+  --color-on-tertiary-fixed-variant: #293978;
+  --color-on-tertiary-container: #1f2f6f;
+
+  --color-surface: #f8f9fa;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-dim: #d1dce0;
+  --color-surface-variant: #dbe4e7;
+  --color-surface-tint-color: #5f5e5e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f6;
+  --color-surface-container: #eaeff1;
+  --color-surface-container-high: #e2e9ec;
+  --color-surface-container-highest: #dbe4e7;
+  --color-on-surface: #2b3437;
+  --color-on-surface-variant: #586064;
+  --color-inverse-surface: #0c0f10;
+  --color-inverse-on-surface: #9b9d9e;
+
+  --color-background: #f8f9fa;
+  --color-on-background: #2b3437;
+
+  --color-outline: #737c7f;
+  --color-outline-variant: #abb3b7;
+
+  --color-error: #9f403d;
+  --color-error-dim: #4e0309;
+  --color-error-container: #fe8983;
+  --color-on-error: #fff7f6;
+  --color-on-error-container: #752121;
+
+  /* Typography */
+  --font-headline: var(--font-manrope), "Manrope", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --font-label: var(--font-inter), "Inter", sans-serif;
+
+  /* Border Radius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+/* ── Base Styles ──────────────────────────────────────────── */
+body {
+  background-color: #f8f9fa;
+  color: #2b3437;
+  font-family: var(--font-body);
+}
+
+/* ── Material Symbols ─────────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* ── Frosted Glass ────────────────────────────────────────── */
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+}
