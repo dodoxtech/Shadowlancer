@@ -1,0 +1,555 @@
+<!-- Sanctuary Landing Page -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sanctuary | The Digital Sanctuary for Web3 Freelancers</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#faf7f6",
+              "surface-tint": "#5f5e5e",
+              "inverse-primary": "#ffffff",
+              "on-background": "#2b3437",
+              "surface-container-low": "#f1f4f6",
+              "primary-container": "#e5e2e1",
+              "surface": "#f8f9fa",
+              "tertiary": "#4c5b9c",
+              "tertiary-dim": "#404f8f",
+              "tertiary-fixed-dim": "#96a5ec",
+              "surface-container-highest": "#dbe4e7",
+              "outline": "#737c7f",
+              "on-tertiary-fixed": "#021657",
+              "on-surface": "#2b3437",
+              "secondary": "#585f6d",
+              "on-primary-fixed": "#403f3f",
+              "surface-bright": "#f8f9fa",
+              "on-tertiary-container": "#1f2f6f",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-dim": "#d1dce0",
+              "on-secondary-fixed-variant": "#555c69",
+              "on-primary-container": "#525151",
+              "primary-fixed-dim": "#d6d4d3",
+              "secondary-fixed": "#dce2f3",
+              "secondary-fixed-dim": "#ced4e4",
+              "on-secondary-container": "#4b525f",
+              "on-error": "#fff7f6",
+              "background": "#f8f9fa",
+              "error-container": "#fe8983",
+              "on-error-container": "#752121",
+              "secondary-dim": "#4c5361",
+              "error-dim": "#4e0309",
+              "error": "#9f403d",
+              "primary-dim": "#535252",
+              "on-surface-variant": "#586064",
+              "surface-container-high": "#e2e9ec",
+              "primary": "#5f5e5e",
+              "on-secondary": "#f8f8ff",
+              "surface-variant": "#dbe4e7",
+              "tertiary-fixed": "#a3b2fa",
+              "primary-fixed": "#e5e2e1",
+              "outline-variant": "#abb3b7",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#293978",
+              "on-secondary-fixed": "#39404c",
+              "on-tertiary": "#faf8ff",
+              "secondary-container": "#dce2f3",
+              "surface-container": "#eaeff1",
+              "tertiary-container": "#a3b2fa",
+              "inverse-surface": "#0c0f10",
+              "on-primary-fixed-variant": "#5c5b5b"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .frosted-glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(24px);
+      }
+      body {
+        background-color: #f8f9fa;
+        color: #2b3437;
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-slate-950">
+<div class="flex justify-between items-center px-8 h-20 max-w-[1440px] mx-auto relative">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 font-manrope">Sanctuary</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Jobs</a>
+<a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Earnings</a>
+<a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Messages</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#5f5e5e] dark:text-slate-200 scale-95 active:opacity-80 transition-all p-2">notifications</button>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-label text-sm font-medium scale-95 active:opacity-80 transition-all">Connect Wallet</button>
+</div>
+<div class="bg-[#eaeff1] dark:bg-slate-900 h-[1px] w-full absolute bottom-0 left-0"></div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="min-h-[921px] flex items-center px-8 md:px-24 py-20 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full max-w-[1440px] mx-auto">
+<div class="lg:col-span-7 z-10">
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-background leading-[0.9] mb-8">
+                        The silence <br/>of deep work.
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-md mb-12 leading-relaxed">
+                        A curated Web3 ecosystem for the high-end freelancer. No noise, just focus.
+                    </p>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-label text-lg font-semibold hover:bg-primary-dim transition-all shadow-sm">
+                            Start Your Journey
+                        </button>
+<button class="text-primary font-label font-semibold flex items-center gap-2 group">
+                            Explore Jobs
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[600px]">
+<div class="absolute inset-0 bg-surface-container-low rounded-full scale-110 -z-10 blur-3xl opacity-50"></div>
+<img alt="Minimalist architectural void with soft shadows and neutral stone textures" class="w-full h-full object-cover rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Modern architectural interior with clean lines, soft natural lighting filtering through concrete structures, minimalist aesthetic in neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBswloo4XoZO5CMn1ub6JTmbUDlY_DlkWE2a4QS3Ap12iu0fOIbXboEaLL9szC1xNoMUZLGk-gbyQQ2S7yAqVdmKewNEHPN-FTB3-9b-qlwlSUEJlZQEMwUKE_p7mNM_M9OlXnZRsFf9k0g_eYEEFvPHZ7CLgWNtGymMESphRGlZy4u4fGibxXURxQa-iTI1gqyezubMh_P-iNbY8s6O0HJvi98W1CvIbCdNfe-B1yXGhTPhYJX2VLDr00G6PSoccCZWefBoY2CWz7J"/>
+</div>
+</div>
+</section>
+<!-- Calm Design Philosophy: Tonal Depth -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div class="space-y-8">
+<span class="font-label text-tertiary tracking-widest uppercase text-xs font-bold">The Philosophy</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">Designed for serenity, built for results.</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                            Most platforms thrive on anxiety—constant notifications, bidding wars, and cluttered interfaces. Sanctuary is different. We apply 'Calm Design' principles to reduce cognitive load and prioritize your mental well-being.
+                        </p>
+</div>
+<div class="grid grid-cols-1 gap-12">
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">filter_vintage</span>
+<h3 class="font-headline text-xl font-bold mb-3">Reduced Stress</h3>
+<p class="font-body text-sm text-on-surface-variant">We eliminate "dark patterns" that trigger FOMO, giving you the space to breathe and choose work that matters.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">center_focus_strong</span>
+<h3 class="font-headline text-xl font-bold mb-3">Better Focus</h3>
+<p class="font-body text-sm text-on-surface-variant">Strategic minimalism means fewer distractions. Our interface fades into the background while you're in the flow.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Dashboard Teaser -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20 text-center max-w-2xl mx-auto">
+<h2 class="font-headline text-5xl font-bold tracking-tight mb-6">Your private sanctuary.</h2>
+<p class="font-body text-on-surface-variant">A dashboard that understands you. No clutter, just the vitals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container p-8 rounded-xl flex flex-col justify-between overflow-hidden relative">
+<div class="z-10">
+<h3 class="font-headline text-2xl font-bold mb-2">Total Balance</h3>
+<p class="text-4xl font-headline font-black text-primary">12.45 ETH</p>
+</div>
+<div class="mt-8 z-10">
+<div class="h-40 w-full bg-surface-container-lowest/50 rounded-lg p-4 flex items-end gap-2">
+<div class="w-full bg-primary/20 h-1/2 rounded-t-sm"></div>
+<div class="w-full bg-primary/40 h-3/4 rounded-t-sm"></div>
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+<div class="w-full bg-primary/60 h-2/3 rounded-t-sm"></div>
+<div class="w-full bg-primary/30 h-1/2 rounded-t-sm"></div>
+</div>
+</div>
+<!-- Ambient Shadow Layer -->
+<div class="absolute bottom-[-10%] right-[-10%] w-64 h-64 bg-tertiary/5 blur-3xl rounded-full"></div>
+</div>
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl flex items-center justify-between">
+<div>
+<h3 class="font-headline text-xl font-bold mb-1">Active Proposals</h3>
+<p class="font-body text-on-surface-variant text-sm">3 Pending Review</p>
+</div>
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-300"></div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-400"></div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-slate-500"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 flex flex-col justify-center">
+<span class="material-symbols-outlined text-tertiary mb-2">verified_user</span>
+<h4 class="font-headline font-bold">Reputation</h4>
+<p class="text-2xl font-bold text-on-surface">98%</p>
+</div>
+<div class="bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-center">
+<span class="material-symbols-outlined mb-2">bolt</span>
+<h4 class="font-headline font-bold">New Jobs</h4>
+<p class="text-2xl font-bold">14 Available</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Gallery / Visual Break -->
+<section class="py-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 h-[500px]">
+<div class="overflow-hidden">
+<img alt="Minimalist lamp on a wooden table with soft light" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a minimalist designer lamp casting soft warm light on a clean wooden surface, airy and peaceful composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf-X5r7rVbPJj7W97X_LytsSS6v8Is9LEa38Rdi8dq9A96M8atDGbcrINQC_2kxUCEQwm8zQNO9WaYSz-3fQAALtJOQkSVXjvWBSEhD9iVwwHtCKpMY80syoRCzv6peTJmouQ7vADKFqnLDg8UbUXTFFwbprgl4OmsaNFLvc1oY9mzsUdTWVcVhyVCw5ANQhvyfSPfvT35925eFDoyZ_NMkjvISHEKvYg0FjAcZ2j1NIGWMhe7pkXu9TkO8Gfb8QDjUSkZ2tjVydeX"/>
+</div>
+<div class="overflow-hidden">
+<img alt="Glass skyscraper with sky reflections" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract view of a glass and steel building reflecting a clear blue sky, geometric lines, clean corporate architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8BC3ddYxDz1DomgMqSJ7poev870KV7LkV_FZX3BBO0ay3n-q8ulM0JiJprEUcEawm9pcZezf4A_zuBXVRvJBdB-WJKTtNzAbJoNCiiqwPUQtwFKnPZ1k9iRb-PRMaxwcrEP1pE-bBY3gNbxbFeWIQdzkM6MhUlAGenj9glm3QoBnKYLj7SvxOZ324V7ArpwO2PDMVrDRYSfnXD2GvsBEaoeINtWRco_hKJ_bF5qdZObuWgLboNAxY5kmKorOnA5pFBJGkbQGcRyCa"/>
+</div>
+<div class="overflow-hidden">
+<img alt="Macbook on a white desk with plant" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="High-end workspace with a slim laptop on a white desk, a small green plant in a ceramic pot, bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSNozdh0pJpW5LmqzwwH3OhCvQ3e5_nzIcXmkPN-FQaqY6xBl-vD_SOLxAjN9KdA2R-oV7r5kObC4eVVlvRXpEu4xoSdwqDSOMp-QgCOEcID-L7ytN0pFf2z-M-NsPrMPu4Kl7QruVgc0ZCBBEexY-eyHaxRwQDdjnvn0FCmqnmnwZsxQDUA_JC9QYXePA9i0u1sp6n2a5DB0oO9Z5EkDvM2EvRoVzgquRd_BRqLCOeoyOG5Z1eh2pTo5cX2GHVjw5apRVoKfkOGjX"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-8 text-center bg-surface">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-10">Ready to find <br/>your sanctuary?</h2>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-md font-label text-xl font-bold hover:opacity-90 transition-all shadow-xl">
+                    Start Your Journey
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f4f6] dark:bg-slate-900 w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-[1440px] mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Sanctuary</span>
+<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Sanctuary Digital. The Digital Sanctuary.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity opacity-100 hover:opacity-80" href="#">Terms</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity opacity-100 hover:opacity-80" href="#">Privacy</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity opacity-100 hover:opacity-80" href="#">Support</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity opacity-100 hover:opacity-80" href="#">Docs</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- Sanctuary Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sanctuary Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#faf7f6",
+                        "surface-tint": "#5f5e5e",
+                        "inverse-primary": "#ffffff",
+                        "on-background": "#2b3437",
+                        "surface-container-low": "#f1f4f6",
+                        "primary-container": "#e5e2e1",
+                        "surface": "#f8f9fa",
+                        "tertiary": "#4c5b9c",
+                        "tertiary-dim": "#404f8f",
+                        "tertiary-fixed-dim": "#96a5ec",
+                        "surface-container-highest": "#dbe4e7",
+                        "outline": "#737c7f",
+                        "on-tertiary-fixed": "#021657",
+                        "on-surface": "#2b3437",
+                        "secondary": "#585f6d",
+                        "on-primary-fixed": "#403f3f",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-container": "#1f2f6f",
+                        "inverse-on-surface": "#9b9d9e",
+                        "surface-dim": "#d1dce0",
+                        "on-secondary-fixed-variant": "#555c69",
+                        "on-primary-container": "#525151",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "secondary-fixed": "#dce2f3",
+                        "secondary-fixed-dim": "#ced4e4",
+                        "on-secondary-container": "#4b525f",
+                        "on-error": "#fff7f6",
+                        "background": "#f8f9fa",
+                        "error-container": "#fe8983",
+                        "on-error-container": "#752121",
+                        "secondary-dim": "#4c5361",
+                        "error-dim": "#4e0309",
+                        "error": "#9f403d",
+                        "primary-dim": "#535252",
+                        "on-surface-variant": "#586064",
+                        "surface-container-high": "#e2e9ec",
+                        "primary": "#5f5e5e",
+                        "on-secondary": "#f8f8ff",
+                        "surface-variant": "#dbe4e7",
+                        "tertiary-fixed": "#a3b2fa",
+                        "primary-fixed": "#e5e2e1",
+                        "outline-variant": "#abb3b7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#293978",
+                        "on-secondary-fixed": "#39404c",
+                        "on-tertiary": "#faf8ff",
+                        "secondary-container": "#dce2f3",
+                        "surface-container": "#eaeff1",
+                        "tertiary-container": "#a3b2fa",
+                        "inverse-surface": "#0c0f10",
+                        "on-primary-fixed-variant": "#5c5b5b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header-anchor {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+        .editorial-text {
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-slate-950 h-20">
+<div class="flex justify-between items-center px-8 h-full max-w-[1440px] mx-auto relative">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 header-anchor">Sanctuary</span>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#1A1A1A] dark:text-white font-semibold border-b-2 border-[#5f5e5e] pb-1 font-inter text-sm transition-colors duration-200" href="#">Jobs</a>
+<a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Earnings</a>
+<a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Messages</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-lg font-label text-sm font-semibold scale-95 active:opacity-80 transition-all">
+                    Connect Wallet
+                </button>
+<div class="flex items-center gap-4 text-[#5f5e5e] dark:text-slate-200">
+<span class="material-symbols-outlined cursor-pointer hover:text-[#1A1A1A] transition-colors">notifications</span>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a professional male freelancer with soft studio lighting and minimalist grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz3WheLXjPXJ7P38vrUmzKEYSlWSEzzLhjbVm94HX0VpOixpW4T5CY9dyAKqoJ8KffPGwl2dYsvHjfO2zumTA8BqAKxnWW-RmhTjJh7vVyDf-6wqqL1hLiWZRuQUZF-DziH8omyZPulcD63XGTADhKDRIub3MNHD28YyfZs88OJXMO8RwMulj7g1bASwvDvIWyXbHmbl-LO-Il2j-GmGhkYK33PGiH05p152uWzML3h5NMop7kMtYET2RKkpfT83JAtEmegnM8mmQp"/>
+</div>
+</div>
+</div>
+<div class="bg-[#eaeff1] dark:bg-slate-900 h-[1px] w-full absolute bottom-0 left-0"></div>
+</div>
+</header>
+<main class="pt-32 pb-20 px-8 max-w-[1440px] mx-auto">
+<!-- Hero Branding & Status -->
+<section class="mb-20 flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl font-extrabold editorial-text text-on-surface mb-4">Good morning, Elias.</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md">Your digital sanctuary is calm. 3 active applications, and your wallet is secured.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex items-center gap-6 min-w-[320px]">
+<div class="flex flex-col">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">Wallet Status</span>
+<span class="font-headline font-bold text-xl text-primary flex items-center gap-2">
+                        0.842 ETH 
+                        <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</span>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/30"></div>
+<button class="text-primary font-label text-sm font-semibold hover:underline">Details</button>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Jobs Currently Applied To (Major Column) -->
+<section class="col-span-12 lg:col-span-8">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline text-2xl font-bold">Jobs Currently Applied To</h2>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label text-sm">
+<span class="material-symbols-outlined text-lg">search</span>
+                        Command Palette
+                    </button>
+</div>
+<div class="space-y-4">
+<!-- Applied Job Card 1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-8 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 bg-surface-container-lowest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">token</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg">Lead Protocol Designer</h3>
+<p class="font-body text-sm text-on-surface-variant">Nexus Foundry • Applied 2 days ago</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="text-right">
+<span class="block font-headline font-bold text-lg">$12,000</span>
+<span class="text-xs uppercase font-label tracking-tighter text-on-surface-variant">Fixed Milestone</span>
+</div>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-semibold">Under Review</span>
+</div>
+</div>
+<!-- Applied Job Card 2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-8 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 bg-surface-container-lowest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg">Smart Contract Architect</h3>
+<p class="font-body text-sm text-on-surface-variant">Ethereal Systems • Applied 5 days ago</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="text-right">
+<span class="block font-headline font-bold text-lg">$180/hr</span>
+<span class="text-xs uppercase font-label tracking-tighter text-on-surface-variant">Hourly Retainer</span>
+</div>
+<span class="px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Interviewing</span>
+</div>
+</div>
+<!-- Applied Job Card 3 -->
+<div class="group bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-8 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 bg-surface-container-lowest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg">Creative Strategist</h3>
+<p class="font-body text-sm text-on-surface-variant">Solana Labs • Applied 1 week ago</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="text-right">
+<span class="block font-headline font-bold text-lg">$8,500</span>
+<span class="text-xs uppercase font-label tracking-tighter text-on-surface-variant">Bounty Based</span>
+</div>
+<span class="px-4 py-1.5 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-semibold">Closed</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Earnings Section (Side Column) -->
+<section class="col-span-12 lg:col-span-4 space-y-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline text-lg font-bold mb-1">Total Earnings</h2>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">Year to date</p>
+</div>
+<span class="material-symbols-outlined text-tertiary">trending_up</span>
+</div>
+<div class="mb-10">
+<span class="font-headline text-4xl font-extrabold tracking-tighter">$42,890.00</span>
+<div class="mt-4 flex items-end gap-1 h-12">
+<div class="w-full bg-surface-container-high h-4 rounded-t-sm"></div>
+<div class="w-full bg-surface-container-high h-6 rounded-t-sm"></div>
+<div class="w-full bg-primary h-10 rounded-t-sm"></div>
+<div class="w-full bg-surface-container-high h-5 rounded-t-sm"></div>
+<div class="w-full bg-primary-dim h-8 rounded-t-sm"></div>
+<div class="w-full bg-tertiary h-12 rounded-t-sm"></div>
+<div class="w-full bg-surface-container-high h-7 rounded-t-sm"></div>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-3 rounded-lg font-label text-sm font-semibold hover:bg-surface-container-highest transition-colors">
+                        View Detailed Report
+                    </button>
+</div>
+<!-- Messages Section -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline text-lg font-bold">Messages</h2>
+<span class="w-5 h-5 bg-error text-on-error rounded-full flex items-center justify-center text-[10px] font-bold">2</span>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4 items-start cursor-pointer hover:bg-surface-container-low -mx-4 p-4 rounded-lg transition-colors">
+<div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="portrait of a female creative director with warm lighting and minimalist office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwkerI_BhEKAcv1MFIsyP_Ct7jZhFw783t6RHZuGqM4cDk08t5xN8TwxBc76flouW9K3-qJ3rsUwv6cFf3QpMGdEUW0bsleQcWdzo1CqIY3uKNQD1JfBpCgdEvncqd8XHKD2rcNbbTVIelnMCu5jmYQF_aIDriwRgB0M4pmQ1wKr1a-mf_8TA3urwfpP5o_czBwnkwqMc17VEGgUj4y-vx7-bHto81Vxr_cutHInPBdBK69HVKMW7ckwns5M0Iw6_2r-lof_beOGYy"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline font-bold text-sm truncate">Sarah Jenkins</h4>
+<span class="text-[10px] text-on-surface-variant font-medium">14:02</span>
+</div>
+<p class="text-xs text-on-surface-variant line-clamp-1 font-body">The protocol designs look incredible, Elias. Can we jump on a quick call tomorrow?</p>
+</div>
+</div>
+<div class="flex gap-4 items-start cursor-pointer hover:bg-surface-container-low -mx-4 p-4 rounded-lg transition-colors">
+<div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="portrait of a male tech entrepreneur with soft natural lighting and blurred greenery background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZz903fgijinInRdCqhHEFLpBPTihcz4pjQVp12VlNtrqwT30DKe9YK-Yo_CTTMeeoC3ksimW3RsLNC889UKQgQ0QfAuJp5-3ezyoD8kycawri2HN_xFVnGdA5n5dAtMfz_g-irJrmVIMXKuduCqzaNC-TcLprMiG8H-W_f04UrxclRfgawMyak80zG-mIHTsZ7_7qOdtqtUAACYnCHpdJchapBLKdaI-tL_EeJXyK94CzmQ2MdvoqyvZsoO0izQQaZgXVYcJhxKL7"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h4 class="font-headline font-bold text-sm truncate">David Chen</h4>
+<span class="text-[10px] text-on-surface-variant font-medium">Yesterday</span>
+</div>
+<p class="text-xs text-on-surface-variant line-clamp-1 font-body">I've sent the initial deposit to your Sanctuary wallet. Please confirm receipt.</p>
+</div>
+</div>
+<button class="w-full text-center py-2 text-xs font-label font-bold text-primary hover:text-on-surface transition-colors mt-2">
+                            Go to Inbox
+                        </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f4f6] dark:bg-slate-900 w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Sanctuary</span>
+<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Sanctuary Digital. The Digital Sanctuary.</p>
+</div>
+<nav class="flex gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity" href="#">Terms</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity" href="#">Privacy</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity" href="#">Support</a>
+<a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity" href="#">Docs</a>
+</nav>
+</div>
+</footer>
+</body></html>
