@@ -29,7 +29,7 @@ export function PhilosophySection() {
             </h2>
             <p className="font-body text-lg text-on-surface-variant leading-relaxed">
               Most platforms thrive on anxiety—constant notifications, bidding
-              wars, and cluttered interfaces. Sanctuary is different. We apply
+              wars, and cluttered interfaces. Shadowlancer is different. We apply
               &apos;Calm Design&apos; principles to reduce cognitive load and
               prioritize your mental well-being.
             </p>

@@ -14,7 +14,7 @@ export function BentoPreview() {
       <div className="max-w-[1440px] mx-auto">
         <div className="mb-20 text-center max-w-2xl mx-auto">
           <h2 className="font-headline text-5xl font-bold tracking-tight mb-6">
-            Your private sanctuary.
+            Your private Shadowlancer.
           </h2>
           <p className="font-body text-on-surface-variant">
             A dashboard that understands you. No clutter, just the vitals.

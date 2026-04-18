@@ -6,7 +6,7 @@ export function CTASection() {
       <div className="max-w-4xl mx-auto">
         <h2 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-10">
           Ready to find <br />
-          your sanctuary?
+          your Shadowlancer?
         </h2>
         <Button size="xl" className="shadow-xl font-bold">
           Start Your Journey

@@ -11,7 +11,7 @@ export function WelcomeHeader({ userName, walletBalance }: WelcomeHeaderProps) {
           Good morning, {userName}.
         </h1>
         <p className="font-body text-lg text-on-surface-variant max-w-md">
-          Your digital sanctuary is calm. 3 active applications, and your
+          Your digital Shadowlancer is calm. 3 active applications, and your
           wallet is secured.
         </p>
       </div>

@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# Sanctuary Design System
+# Shadowlancer Design System
 
 ## Design Philosophy
 "Calm Design" — minimalist, anxiety-free UX. Eliminate dark patterns, FOMO, and clutter. Interface fades into the background so the user can focus.

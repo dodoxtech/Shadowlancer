@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sanctuary | The Digital Sanctuary for Web3 Freelancers",
+  title: "Shadowlancer | The Digital Shadowlancer for Web3 Freelancers",
   description:
     "A curated Web3 ecosystem for the high-end freelancer. No noise, just focus.",
 };

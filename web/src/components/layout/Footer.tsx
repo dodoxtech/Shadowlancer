@@ -13,10 +13,10 @@ export function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <span className="font-headline font-black text-[#1A1A1A] dark:text-slate-100 text-xl">
-            Sanctuary
+            Shadowlancer
           </span>
           <p className="font-body text-xs tracking-wide uppercase text-primary dark:text-slate-300">
-            © 2024 Sanctuary Digital. The Digital Sanctuary.
+            © 2024 Shadowlancer Digital. The Digital Shadowlancer.
           </p>
         </div>
         <nav className="flex gap-8">
