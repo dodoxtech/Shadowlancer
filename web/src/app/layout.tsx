@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
+import { Web3Provider } from "@/components/providers/Web3Provider";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -36,7 +37,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
       </head>
-      <body className="antialiased min-h-screen flex flex-col">{children}</body>
+      <body className="antialiased min-h-screen flex flex-col">
+        <Web3Provider>{children}</Web3Provider>
+      </body>
     </html>
   );
 }

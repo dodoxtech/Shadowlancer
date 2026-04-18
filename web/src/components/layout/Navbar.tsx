@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Icon } from "@/components/ui/Icon";
-import { Button } from "@/components/ui/Button";
 import type { NavItem } from "@/types";
 
 interface NavbarProps {
@@ -53,9 +55,11 @@ export function Navbar({
               <Icon name="notifications" className="text-primary dark:text-slate-200" />
             </button>
           )}
-          <Button size="sm" className="rounded-lg scale-95 active:opacity-80">
-            Connect Wallet
-          </Button>
+          <ConnectButton
+            chainStatus="icon"
+            showBalance={false}
+            accountStatus="avatar"
+          />
           {showUserProfile && (
             <div className="flex items-center gap-4 text-primary dark:text-slate-200">
               <Icon name="notifications" className="cursor-pointer hover:text-[#1A1A1A] transition-colors" />
