@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { parseGwei } from "viem";
 import { useWriteContract, useWaitForTransactionReceipt, useAccount } from "wagmi";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
-import { CONTRACT_ADDRESS, PRIVATE_BID_MARKET_ABI, buildInEuint32 } from "@/lib/contracts";
+import { CONTRACT_ADDRESS, PRIVATE_BID_MARKET_ABI, encryptUint32 } from "@/lib/contracts";
 
 interface FormState {
   title: string;
@@ -54,12 +55,18 @@ export function CreateJobForm() {
       setForm((f) => ({ ...f, [field]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!isConnected) return;
 
     const deadlineUnix = BigInt(Math.floor(new Date(form.biddingDeadline).getTime() / 1000));
     const budgetValue = parseInt(form.maxBudget, 10);
+
+    // Encrypt the budget client-side using the Fhenix cofhejs SDK before sending on-chain.
+    // cofhejs must be initialised with the user's provider (done in the app's wallet setup).
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const cofhejs = (window as any).cofhejs;
+    const encryptedBudget = await encryptUint32(budgetValue, cofhejs);
 
     writeContract({
       address: CONTRACT_ADDRESS,
@@ -69,8 +76,9 @@ export function CreateJobForm() {
         form.title,
         form.description,
         deadlineUnix,
-        buildInEuint32(budgetValue),
+        encryptedBudget,
       ],
+      gas: parseGwei("0.005"),
     });
   }
 
