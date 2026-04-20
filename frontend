@@ -1,10 +1,10 @@
-<!-- Sanctuary Landing Page -->
+<!-- Shadowlancer Landing Page -->
 <!DOCTYPE html>
 
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sanctuary | The Digital Sanctuary for Web3 Freelancers</title>
+<title>Shadowlancer | The Digital Shadowlancer for Web3 Freelancers</title>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -102,7 +102,7 @@
 <nav class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-slate-950">
 <div class="flex justify-between items-center px-8 h-20 max-w-[1440px] mx-auto relative">
 <div class="flex items-center gap-12">
-<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 font-manrope">Sanctuary</span>
+<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 font-manrope">Shadowlancer</span>
 <div class="hidden md:flex items-center gap-8">
 <a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Jobs</a>
 <a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Earnings</a>
@@ -151,7 +151,7 @@
 <span class="font-label text-tertiary tracking-widest uppercase text-xs font-bold">The Philosophy</span>
 <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">Designed for serenity, built for results.</h2>
 <p class="font-body text-lg text-on-surface-variant leading-relaxed">
-                            Most platforms thrive on anxiety—constant notifications, bidding wars, and cluttered interfaces. Sanctuary is different. We apply 'Calm Design' principles to reduce cognitive load and prioritize your mental well-being.
+                            Most platforms thrive on anxiety—constant notifications, bidding wars, and cluttered interfaces. Shadowlancer is different. We apply 'Calm Design' principles to reduce cognitive load and prioritize your mental well-being.
                         </p>
 </div>
 <div class="grid grid-cols-1 gap-12">
@@ -173,7 +173,7 @@
 <section class="py-32 px-8 bg-surface">
 <div class="max-w-[1440px] mx-auto">
 <div class="mb-20 text-center max-w-2xl mx-auto">
-<h2 class="font-headline text-5xl font-bold tracking-tight mb-6">Your private sanctuary.</h2>
+<h2 class="font-headline text-5xl font-bold tracking-tight mb-6">Your private Shadowlancer.</h2>
 <p class="font-body text-on-surface-variant">A dashboard that understands you. No clutter, just the vitals.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
@@ -235,7 +235,7 @@
 <!-- CTA Section -->
 <section class="py-40 px-8 text-center bg-surface">
 <div class="max-w-4xl mx-auto">
-<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-10">Ready to find <br/>your sanctuary?</h2>
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-10">Ready to find <br/>your Shadowlancer?</h2>
 <button class="bg-primary text-on-primary px-12 py-5 rounded-md font-label text-xl font-bold hover:opacity-90 transition-all shadow-xl">
                     Start Your Journey
                 </button>
@@ -246,8 +246,8 @@
 <footer class="bg-[#f1f4f6] dark:bg-slate-900 w-full py-12">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-[1440px] mx-auto">
 <div class="flex flex-col items-center md:items-start gap-2">
-<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Sanctuary</span>
-<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Sanctuary Digital. The Digital Sanctuary.</p>
+<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Shadowlancer</span>
+<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Shadowlancer Digital. The Digital Shadowlancer.</p>
 </div>
 <div class="flex gap-8">
 <a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity opacity-100 hover:opacity-80" href="#">Terms</a>
@@ -259,13 +259,13 @@
 </footer>
 </body></html>
 
-<!-- Sanctuary Dashboard -->
+<!-- Shadowlancer Dashboard -->
 <!DOCTYPE html>
 
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sanctuary Dashboard</title>
+<title>Shadowlancer Dashboard</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -361,7 +361,7 @@
 <header class="fixed top-0 w-full z-50 bg-[#f8f9fa] dark:bg-slate-950 h-20">
 <div class="flex justify-between items-center px-8 h-full max-w-[1440px] mx-auto relative">
 <div class="flex items-center gap-12">
-<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 header-anchor">Sanctuary</span>
+<span class="text-2xl font-bold tracking-tighter text-[#1A1A1A] dark:text-slate-100 header-anchor">Shadowlancer</span>
 <nav class="hidden md:flex gap-8 items-center">
 <a class="text-[#1A1A1A] dark:text-white font-semibold border-b-2 border-[#5f5e5e] pb-1 font-inter text-sm transition-colors duration-200" href="#">Jobs</a>
 <a class="text-[#586064] dark:text-slate-400 font-medium font-inter text-sm hover:text-[#1A1A1A] dark:hover:text-white transition-colors duration-200" href="#">Earnings</a>
@@ -386,8 +386,8 @@
 <!-- Hero Branding & Status -->
 <section class="mb-20 flex flex-col md:flex-row justify-between items-end gap-8">
 <div class="max-w-2xl">
-<h1 class="font-headline text-5xl font-extrabold editorial-text text-on-surface mb-4">Good morning, Elias.</h1>
-<p class="font-body text-lg text-on-surface-variant max-w-md">Your digital sanctuary is calm. 3 active applications, and your wallet is secured.</p>
+<h1 class="font-headline text-5xl font-extrabold editorial-text text-on-surface mb-4">Good morning, Hacker.</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md">Your digital Shadowlancer is calm. 3 active applications, and your wallet is secured.</p>
 </div>
 <div class="bg-surface-container-low p-6 rounded-xl flex items-center gap-6 min-w-[320px]">
 <div class="flex flex-col">
@@ -514,7 +514,7 @@
 <h4 class="font-headline font-bold text-sm truncate">Sarah Jenkins</h4>
 <span class="text-[10px] text-on-surface-variant font-medium">14:02</span>
 </div>
-<p class="text-xs text-on-surface-variant line-clamp-1 font-body">The protocol designs look incredible, Elias. Can we jump on a quick call tomorrow?</p>
+<p class="text-xs text-on-surface-variant line-clamp-1 font-body">The protocol designs look incredible, Hacker. Can we jump on a quick call tomorrow?</p>
 </div>
 </div>
 <div class="flex gap-4 items-start cursor-pointer hover:bg-surface-container-low -mx-4 p-4 rounded-lg transition-colors">
@@ -526,7 +526,7 @@
 <h4 class="font-headline font-bold text-sm truncate">David Chen</h4>
 <span class="text-[10px] text-on-surface-variant font-medium">Yesterday</span>
 </div>
-<p class="text-xs text-on-surface-variant line-clamp-1 font-body">I've sent the initial deposit to your Sanctuary wallet. Please confirm receipt.</p>
+<p class="text-xs text-on-surface-variant line-clamp-1 font-body">I've sent the initial deposit to your Shadowlancer wallet. Please confirm receipt.</p>
 </div>
 </div>
 <button class="w-full text-center py-2 text-xs font-label font-bold text-primary hover:text-on-surface transition-colors mt-2">
@@ -541,8 +541,8 @@
 <footer class="bg-[#f1f4f6] dark:bg-slate-900 w-full py-12">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-[1440px] mx-auto">
 <div class="flex flex-col md:flex-row items-center gap-8">
-<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Sanctuary</span>
-<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Sanctuary Digital. The Digital Sanctuary.</p>
+<span class="font-manrope font-black text-[#1A1A1A] dark:text-slate-100 text-xl">Shadowlancer</span>
+<p class="font-inter text-xs tracking-wide uppercase text-[#5f5e5e] dark:text-slate-300">© 2024 Shadowlancer Digital. The Digital Shadowlancer.</p>
 </div>
 <nav class="flex gap-8">
 <a class="font-inter text-xs tracking-wide uppercase text-[#586064] dark:text-slate-500 hover:text-[#5f5e5e] underline underline-offset-4 transition-opacity" href="#">Terms</a>

@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
+    "deploy:fhenix": "npx hardhat run scripts/deploy.js --network fhenixNitrogen",
     "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
     "deploy:arb": "npx hardhat run scripts/deploy.js --network arbitrumSepolia",
     "interact:sepolia": "npx hardhat run scripts/interact.js --network sepolia"

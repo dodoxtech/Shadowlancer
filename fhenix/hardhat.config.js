@@ -19,6 +19,12 @@ module.exports = {
   },
   networks: {
     hardhat: {},
+    // Fhenix Nitrogen testnet — FHE operations work here
+    fhenixNitrogen: {
+      url: "https://api.nitrogen.fhenix.zone",
+      accounts: PRIVATE_KEY !== "0x" + "0".repeat(64) ? [PRIVATE_KEY] : [],
+      chainId: 8008148,
+    },
     sepolia: {
       url: SEPOLIA_RPC_URL,
       accounts: PRIVATE_KEY !== "0x" + "0".repeat(64) ? [PRIVATE_KEY] : [],
